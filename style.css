@@ -1,0 +1,147 @@
+@font-face {
+  font-family: Graphik LC;
+  src: url(GraphikLC.ttf);
+}
+body {
+  font-family: Graphik LC;
+}
+.headerSlider_slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  outline: none;
+}
+header {
+  position: fixed;
+  width: 100%;
+  padding: 40px;
+  z-index: 10;
+}
+.headerContent {
+  padding: 40px;
+  font-size: 28px;
+  color: white;
+}
+.headerContent h1 {
+  font-size: 110px;
+  font-weight: 500;
+  line-height: 0.9;
+}
+.headerContent_btn {
+  background-color: white;
+  font-size: 18px;
+  color: #121212;
+  padding: 20px 69px;
+  text-decoration: none;
+}
+.headerContent_text {
+  margin-bottom: 40px;
+  width: 720px;
+}
+.headerSlider_slide .container-fluid {
+  height: 100%;
+}
+.menu_item {
+  padding: 0px 20px;
+}
+.menu_item a {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+.user a {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+.user img {
+  filter: brightness(150%);
+}
+.headerItems {
+  position: relative;
+  z-index: 10;
+  bottom: 73px;
+}
+.headerItems_items {
+  height: 44px;
+}
+.headerItems_items a {
+  color: #B8B8B8;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+.headerItems_progressBar {
+  height: 5px;
+  background-color: black;
+}
+.mainContent_rusgeoteh {
+  background: linear-gradient(180deg, #F3F5F9 0%, rgba(255, 255, 255, 0.5) 100%);
+  border: 1px solid #E4E4E4;
+  margin: -33px 40px 40px 40px;
+}
+.mainContent_rusgeoteh_item {
+  position: relative;
+  z-index: 1;
+  height: 209px;
+  border: 1px solid #E4E4E4;
+  background: none;
+}
+.mainContent_rusgeoteh_item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(115deg, #2400ff 0%, #5700d1 20%, #8400c6 40%, #a600e2 60%, #ffa30b 75%, #e81d1d 85%);
+  background-size: 2000% 2000%;
+  animation: rainbow 18s ease infinite;
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+@keyframes rainbow { 
+  0%{background-position:0% 100%}
+  50%{background-position:100% 0%}
+  100%{background-position:0% 100%}
+}
+.mainContent_rusgeoteh_item:hover::before {
+  opacity: 1;
+}
+.mainContent_text {
+  z-index: 0;
+  position: relative;
+  padding: 70px;
+  height: 710px;
+  bottom: 710px;
+}
+.mainContent_text_item {
+  width: 1400px;
+}
+.mainContent_text_item h2 {
+  color: #121212;
+  font-size: 70px;
+  font-weight: 500;
+  margin-bottom: 63px;
+}
+.mainContent_text_item h6 {
+  font-size: 18px;
+  color: #737578;
+  font-weight: 400;
+  margin-bottom: 13px;
+  line-height: 1.5;
+}
+.mainContent_text_item a {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #737578;
+}
+  
+
+
+
