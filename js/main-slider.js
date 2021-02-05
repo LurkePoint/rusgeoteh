@@ -8,8 +8,7 @@ $(function () {
         autoplayTimeout: 5000,
         smartSpeed: 1000,
         startPosition: 'URLHash',
-        onInitialized: bar,
-        onTranslated: bar,
+        
         // arrows: false,
         // dots: false,
         // autoplay: true, 
@@ -17,6 +16,8 @@ $(function () {
         // speed: 1500
     })
 })
+
+
 
 
 
