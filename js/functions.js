@@ -153,83 +153,83 @@ $('.block_top').on('click', function() {
   // }); 
 
 
-$( document ).ready(function(){
+// $( document ).ready(function(){
 
-    $('.slide_one').on('click', function () {
-        $( ".bar" ).stop();
-        $( ".bar" ).css({
-            width: "0%",
-          });
-        $( ".bar" ).animate({
-            width: "25%",
-          }, 5000, "linear", function(){
-            $("#owl-demo").trigger("next.owl.carousel");
-            $( ".bar" ).animate({
-              width: "50%",
-            }, 5000, "linear", function(){
-              $("#owl-demo").trigger("next.owl.carousel");
-              $( ".bar" ).animate({
-                width: "75%",
-              }, 5000, "linear", function(){
-                $("#owl-demo").trigger("next.owl.carousel");
-                $( ".bar" ).animate({
-                  width: "100%",
-                }, 5000, "linear");
-              }); 
-            }); 
-          }); 
+//     $('.slide_one').on('click', function () {
+//         $( ".bar" ).stop();
+//         $( ".bar" ).css({
+//             width: "0%",
+//           });
+//         $( ".bar" ).animate({
+//             width: "25%",
+//           }, 5000, "linear", function(){
+//             $("#owl-demo").trigger("next.owl.carousel");
+//             $( ".bar" ).animate({
+//               width: "50%",
+//             }, 5000, "linear", function(){
+//               $("#owl-demo").trigger("next.owl.carousel");
+//               $( ".bar" ).animate({
+//                 width: "75%",
+//               }, 5000, "linear", function(){
+//                 $("#owl-demo").trigger("next.owl.carousel");
+//                 $( ".bar" ).animate({
+//                   width: "100%",
+//                 }, 5000, "linear");
+//               }); 
+//             }); 
+//           }); 
           
           
-    });
-    $('.slide_two').on('click', function SlideTwo() {
-        $( ".bar" ).stop();
-        $( ".bar" ).css({
-            width: "25%",
-          });
-          $( ".bar" ).animate({
-            width: "50%",
-          }, 5000, "linear", function(){
-            $("#owl-demo").trigger("next.owl.carousel");
-            $( ".bar" ).animate({
-              width: "75%",
-            }, 5000, "linear", function(){
-              $("#owl-demo").trigger("next.owl.carousel");
-              $( ".bar" ).animate({
-                width: "100%",
-              }, 5000, "linear");
-            }); 
-          }); 
+//     });
+//     $('.slide_two').on('click', function SlideTwo() {
+//         $( ".bar" ).stop();
+//         $( ".bar" ).css({
+//             width: "25%",
+//           });
+//           $( ".bar" ).animate({
+//             width: "50%",
+//           }, 5000, "linear", function(){
+//             $("#owl-demo").trigger("next.owl.carousel");
+//             $( ".bar" ).animate({
+//               width: "75%",
+//             }, 5000, "linear", function(){
+//               $("#owl-demo").trigger("next.owl.carousel");
+//               $( ".bar" ).animate({
+//                 width: "100%",
+//               }, 5000, "linear");
+//             }); 
+//           }); 
           
-    });
-    $('.slide_three').on('click', function SlideThree() {
-        $( ".bar" ).stop();
-        $( ".bar" ).css({
-            width: "50%",
-          });
-          $( ".bar" ).animate({
-            width: "75%",
-          }, 5000, "linear", function(){
-            $("#owl-demo").trigger("next.owl.carousel");
-            $( ".bar" ).animate({
-              width: "100%",
-            }, 5000, "linear");
-          }); 
+//     });
+//     $('.slide_three').on('click', function SlideThree() {
+//         $( ".bar" ).stop();
+//         $( ".bar" ).css({
+//             width: "50%",
+//           });
+//           $( ".bar" ).animate({
+//             width: "75%",
+//           }, 5000, "linear", function(){
+//             $("#owl-demo").trigger("next.owl.carousel");
+//             $( ".bar" ).animate({
+//               width: "100%",
+//             }, 5000, "linear");
+//           }); 
           
-    });
-    $('.slide_four').on('click', function SlideFour() {
-        $( ".bar" ).stop();
-        $( ".bar" ).css({
-            width: "75%",
-          });
-          $( ".bar" ).animate({
-            width: "100%",
-          }, 5000, "linear", function(){
-            $("#owl-demo").trigger("next.owl.carousel");
-            $( ".bar" ).animate({
-              width: "100%",
-            }, 5000, "linear");
-          }); 
+//     });
+//     $('.slide_four').on('click', function SlideFour() {
+//         $( ".bar" ).stop();
+//         $( ".bar" ).css({
+//             width: "75%",
+//           });
+//           $( ".bar" ).animate({
+//             width: "100%",
+//           }, 5000, "linear", function(){
+//             $("#owl-demo").trigger("next.owl.carousel");
+//             $( ".bar" ).animate({
+//               width: "100%",
+//             }, 5000, "linear");
+//           }); 
           
-    });
+//     });
 
-});
+// });
