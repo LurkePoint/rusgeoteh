@@ -59,14 +59,15 @@ $(function () {
                 items: 1,
                 
             },
-            760 : {
+            769 : {
                 items: 2,
                 
             },
-            1200 : {
+            1000 : {
                 items: 3,
                 
             },
+            
             1770 : {
                 items: 4,
                 
@@ -76,21 +77,14 @@ $(function () {
 
     
     function numbersProductionStart(event) {
-    
         var item = event.item.index + 1;
-        
         $('.contentProduction_num').html("<b>" + item + "</b>" + " / " + $(".production_slider button").length)
-       
      }
     
     function numbersProduction(event) {
-    
         var page = event.page.index + 1;
-        
         var pages = event.page.count;
-        
         $('.contentProduction_num').html("<b>" + page + "</b>" + " / " + pages)
-       
      }
     
 })
@@ -144,21 +138,14 @@ $(function () {
      
 
     function numbersReviewsStart(event) {
-    
         var item = event.item.index + 1;
-        
         $('.contentClientsReviews_num').html("<b>" + item + "</b>" + " / " + $(".contentReviews_slider button").length)
-       
      }
     
     function numbersReviews(event) {
-    
         var page = event.page.index + 1;
-        
         var pages = event.page.count;
-        
         $('.contentClientsReviews_num').html("<b>" + page + "</b>" + " / " + pages)
-       
      }
 })
 

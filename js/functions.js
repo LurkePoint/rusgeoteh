@@ -18,7 +18,7 @@ $(window).scroll(function() {
     $('.stroke_svg').removeClass('menu_item_svg-black');
     }
     //выдвижная шапка
-    var height = $(window).scrollTop();
+    
     if(height > 0){
     $('header').addClass('header-background');
     } else {
@@ -81,7 +81,77 @@ $('.headerItems_zakaz_foto_back').on('click', function (e) {
   $('.headerItems_zakaz_svg').removeClass('headerItems_zakaz_svg-active');
   $('.headerItems_zakaz').removeClass('headerItems_zakaz-active');
 });
+$('.headerItems_zakaz_1430px_start').on('click', function (e) {
+  e.preventDefault();
+  $('.headerItems_zakaz_1430px').addClass('headerItems_zakaz_1430px-active');
+  $('.headerItems_zakaz_1430px_fon').addClass('headerItems_zakaz_1430px_fon-active');
+});
+$('.headerItems_zakaz_1430px_foto_back').on('click', function (e) {
+  e.preventDefault();
+  $('.headerItems_zakaz_1430px').removeClass('headerItems_zakaz_1430px-active');
+  $('.headerItems_zakaz_1430px_fon').removeClass('headerItems_zakaz_1430px_fon-active');
+});
+$('.headerItems_zakaz_1430px_fon').on('click', function (e) {
+  e.preventDefault();
+  $('.headerItems_zakaz_1430px').removeClass('headerItems_zakaz_1430px-active');
+  $('.headerItems_zakaz_1430px_fon').removeClass('headerItems_zakaz_1430px_fon-active');
+});
 
+
+
+$('.menu_item_sys').on('click', function (e) {
+  e.preventDefault();
+  $('.podmenu_sys').addClass('podmenu_sys-active');
+});
+$('.zagolovok_sys').on('click', function (e) {
+  e.preventDefault();
+  $('.podmenu_sys').removeClass('podmenu_sys-active');
+});
+
+$('.menu_item_katalog').on('click', function (e) {
+  e.preventDefault();
+  $('.podmenu_katalog').addClass('podmenu_katalog-active');
+});
+$('.zagolovok_katalog').on('click', function (e) {
+  e.preventDefault();
+  $('.podmenu_katalog').removeClass('podmenu_katalog-active');
+});
+
+$('.menu_item_soft').on('click', function (e) {
+  e.preventDefault();
+  $('.podmenu_soft').addClass('podmenu_soft-active');
+});
+$('.zagolovok_soft').on('click', function (e) {
+  e.preventDefault();
+  $('.podmenu_soft').removeClass('podmenu_soft-active');
+});
+
+$('.menu_item_info').on('click', function (e) {
+  e.preventDefault();
+  $('.podmenu_info').addClass('podmenu_info-active');
+});
+$('.zagolovok_info').on('click', function (e) {
+  e.preventDefault();
+  $('.podmenu_info').removeClass('podmenu_info-active');
+});
+
+
+
+
+
+
+
+
+
+$('.burger').on('click', function (e) {
+  e.preventDefault();
+  $('.burger').toggleClass('burger-active');
+  $('.menu').toggleClass('menu-active');
+  $('body').toggleClass('body-lock');
+  $('html, body').animate({
+    scrollTop: 0,
+  }, 0, "linear");
+});
 
 
 $('.profile_svg').on('click', function (e) {

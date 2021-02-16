@@ -16,34 +16,55 @@
   <div class="header">
     <header>
         <div class="container-fluid g-0">
-            <div class="row d-flex align-items-center g-0">
-                <div class="col-2">
+            <div class="row d-flex align-items-center g-0 justify-content-between">
+                <div class="col-2 d-flex align-items-center">
+                    <div class="burger">
+                      <span class="burger_line burger_line_one"></span>
+                      <span class="burger_line burger_line_two"></span>
+                      <span class="burger_line burger_line_three"></span>
+                      <span class="burger_line burger_line_four"></span>
+                    </div>
                     <div class="block_logo">
                     <img src="images/logoIcon.svg" alt="" class="logoIcon">
                     <img src="images/logoText.svg" alt="" class="logoText">
                     </div>
                 </div>
-                <div class="col-8 d-flex">
-                    <div class="menu d-flex flex-wrap">
-                        <div class="menu_item"><a href="#" class="menu_item_a">Системы мониторинга</a>
-                          <div class="podmenu d-flex justify-content-center">
+                <div class="col-8 d-xl-flex align-items-center">
+                    <div class="menu">
+                        <div class="menu_item"><a href="#" class="menu_item_a menu_item_sys d-flex justify-content-between">Системы мониторинга <img src="images/Stroke.svg" alt="" class="stroke_svg stroke_svg_d_none"></a>
+                          
+                          <div class="podmenu podmenu_sys d-flex justify-content-start justify-content-xl-center">
                             <div class="podmenu_items d-flex">
+                                <div class="podmenu_items_item podmenu_items_item_zagolovok d-block d-xl-none">
+                                  <a href="#" class="podmenu_items_item_a podmenu_items_item_a_zagolovok zagolovok_sys">
+                                    <img src="images/Stroke.svg" alt="" class="stroke_svg stroke_svg_zagolovok">
+                                    Системы мониторинга
+                                  </a>
+                                </div>
                                 <div class="podmenu_items_item"><a href="#" class="podmenu_items_item_a">С автоматизированным сбором данных</a></div>
                                 <div class="podmenu_items_item"><a href="#" class="podmenu_items_item_a">С ручным сбором данных</a></div>
                             </div>
                           </div>
+                          
                           <div class="opacity_fon"></div>
                         </div>
                         <div class="menu_item"><a href="#" class="menu_item_a">Конфигуратор</a></div>
-                        <div class="menu_item"><a href="#" class="menu_item_a">Каталог продукции</a>
-                          <div class="podmenu">
-                            <div class="container-fluid">
+                        <div class="menu_item"><a href="#" class="menu_item_a menu_item_katalog d-flex justify-content-between">Каталог продукции <img src="images/Stroke.svg" alt="" class="stroke_svg stroke_svg_d_none"></a>
+                          <div class="podmenu podmenu_katalog">
+                            <div class="container-fluid g-0">
                             <div class="row g-0 justify-content-center">
                             
-                            <div class="col-8">
+                            <div class="col-xl-8 col-12">
                             <div class="podmenu_items d-flex flex-wrap justify-content-between">
+                                <div class="podmenu_items_item podmenu_items_item_zagolovok d-block d-xl-none">
+                                  <a href="#" class="podmenu_items_item_a podmenu_items_item_a_zagolovok zagolovok_katalog">
+                                    <img src="images/Stroke.svg" alt="" class="stroke_svg stroke_svg_zagolovok">
+                                    Каталог продукции
+                                  </a>
+                                </div>
                                 <div class="podmenu_items_item">
-                                  <a href="#" class="podmenu_items_item_a"><b class="item_bold">Оборудование</b></a>
+                                  <a href="#" class="podmenu_items_item_a d-none d-xl-block"><b class="item_bold">Оборудование</b></a>
+                                  <a href="#" class="podmenu_items_item_katalog_a d-block d-xl-none">Вся продукция</a>
                                   <a href="#" class="podmenu_items_item_katalog_a">Термокоса</a>
                                   <a href="#" class="podmenu_items_item_katalog_a">Логгер</a>
                                   <a href="#" class="podmenu_items_item_katalog_a">Считыватель температуры</a>
@@ -51,11 +72,11 @@
                                 </div>
                                 <div class="podmenu_items_item">
                                   <a href="#" class="podmenu_items_item_a"><b class="item_bold">Комплектующие</b></a>
-                                  <a href="#" class="podmenu_items_item_katalog_a">Армирующий трос</a>
-                                  <a href="#" class="podmenu_items_item_katalog_a">Защитная крышка</a>
-                                  <a href="#" class="podmenu_items_item_katalog_a">Утяжелитель для термокосы</a>
+                                  <a href="#" class="podmenu_items_item_katalog_a d-none d-xl-block">Армирующий трос</a>
+                                  <a href="#" class="podmenu_items_item_katalog_a d-none d-xl-block">Защитная крышка</a>
+                                  <a href="#" class="podmenu_items_item_katalog_a d-none d-xl-block">Утяжелитель для термокосы</a>
                                 </div>
-                                <div class="podmenu_items_item">
+                                <div class="podmenu_items_item d-xl-block d-none">
                                   <div class="podmenu_fotoKatalog">
                                     <img src="images/fotoKatalog.png" alt="">
                                     <div class="podmenu_fotoKatalog_text">Системы мониторинга</div>
@@ -69,9 +90,15 @@
                           </div>
                           <div class="opacity_fon"></div>
                         </div>
-                        <div class="menu_item"><a href="#" class="menu_item_a">Софт</a>
-                          <div class="podmenu d-flex justify-content-center">
+                        <div class="menu_item"><a href="#" class="menu_item_a menu_item_soft d-flex justify-content-between">Софт <img src="images/Stroke.svg" alt="" class="stroke_svg stroke_svg_d_none"></a>
+                          <div class="podmenu podmenu_soft d-flex justify-content-center">
                             <div class="podmenu_items d-flex">
+                                <div class="podmenu_items_item podmenu_items_item_zagolovok d-block d-xl-none">
+                                  <a href="#" class="podmenu_items_item_a podmenu_items_item_a_zagolovok zagolovok_soft">
+                                    <img src="images/Stroke.svg" alt="" class="stroke_svg stroke_svg_zagolovok">
+                                    Софт
+                                  </a>
+                                </div>
                                 <div class="podmenu_items_item"><a href="#" class="podmenu_items_item_a">SmartGTM</a></div>
                                 <div class="podmenu_items_item"><a href="#" class="podmenu_items_item_a">SmartView</a></div>
                                 <div class="podmenu_items_item"><a href="#" class="podmenu_items_item_a">SmartPileTest</a></div>
@@ -80,9 +107,16 @@
                           <div class="opacity_fon"></div>
                         </div>
                         <div class="menu_item"><a href="#" class="menu_item_a">Кейсы</a></div>
-                        <div class="menu_item rotate"><a href="#" class="menu_item_a">Информация <img src="images/Stroke.svg" alt="" class="stroke_svg"></a>
-                          <div class="podmenu d-flex justify-content-center">
+                        
+                        <div class="menu_item rotate"><a href="#" class="menu_item_a menu_item_info d-flex justify-content-between">Информация <img src="images/Stroke.svg" alt="" class="stroke_svg"></a>
+                          <div class="podmenu podmenu_info d-flex justify-content-center">
                             <div class="podmenu_items d-flex">
+                                <div class="podmenu_items_item podmenu_items_item_zagolovok d-block d-xl-none">
+                                  <a href="#" class="podmenu_items_item_a podmenu_items_item_a_zagolovok zagolovok_info">
+                                    <img src="images/Stroke.svg" alt="" class="stroke_svg stroke_svg_zagolovok">
+                                    Информация
+                                  </a>
+                                </div>
                                 <div class="podmenu_items_item"><a href="#" class="podmenu_items_item_a">О компании</a></div>
                                 <div class="podmenu_items_item"><a href="#" class="podmenu_items_item_a">Аккредитация</a></div>
                                 <div class="podmenu_items_item"><a href="#" class="podmenu_items_item_a">Отзывы</a></div>
@@ -93,11 +127,12 @@
                           <div class="opacity_fon"></div>
                         </div>
                     </div>
-                    <div class="menu_item_search d-flex align-items-center"><img src="images/Search.svg" alt="" class="search_svg"></div>
+
                 </div>
                 <div class="col-2">
                     <div class="user d-flex justify-content-end align-items-center">
-                        
+                      <div class="user_item_search"><img src="images/Search.svg" alt="" class="search_svg"></div>
+
                         <div class="user_item"><a href="tel:+74951087619" class="user_item_a">+7 495 108-76-19</a></div>
                         <div class="user_item"><img src="images/Profile.svg" alt="" class="profile_svg">
                           <div class="login">
@@ -165,9 +200,10 @@
     </div>
     <div class="headerItems">
       
-      <div class="headerItems_zakaz d-flex flex-column">
+      <div class="headerItems_zakaz">
         <div class="headerItems_zakaz_foto justify-content-between">
           <img src="images/Zakaz.svg" alt="" class="headerItems_zakaz_svg">
+        
           <div class="headerItems_zakaz_foto_back">
             <img src="images/Stroke.svg" alt="" class="headerItems_stroke_svg">
           </div>
@@ -186,6 +222,7 @@
         </a>
       </div>
      
+
       <div class="container-fluid g-0">
         <div class="row g-0 align-items-center align-items-stretch">
             <div class="col-3">
@@ -223,6 +260,40 @@
         </div>
       </div>
     </div>
+
+    
+    <div class="headerItems_zakaz_1430px_start">
+      <img src="images/Zakaz.svg" alt="" class="headerItems_zakaz_1430px_start_svg">
+      <div class="headerItems_zakaz_1430px_start_zagolovok">Быстрый заказ</div>
+    </div>
+    <div class="headerItems_zakaz_1430px_fon"></div>
+
+    <div class="headerItems_zakaz_1430px">
+      <div class="headerItems_zakaz_1430px_foto justify-content-between">
+        <img src="images/Zakaz.svg" alt="" class="headerItems_zakaz_1430px_svg">
+        
+        <div class="headerItems_zakaz_1430px_foto_back">
+          <img src="images/Exit.svg" alt="" class="headerItems_exit_svg">
+        </div>
+      </div>
+      <div class="headerItems_zakaz_1430px_text">
+        <div class="headerItems_zakaz_1430px_text_zagolovok">Быстрый заказ</div>
+        Загрузите <span class="zakaz_bg_text">опросный лист,</span> <span class="zakaz_bg_text">чертёж</span>
+        или <span class="zakaz_bg_text">спецификацию</span> в форму заявки 
+        и мы сами рассчитаем стоимость 
+        оборудования!
+      </div>
+      <a href="#">
+      <div class="headerItems_zakaz_1430px_btn">
+        Сделать заявку
+      </div>
+      </a>
+    </div>
+
+
+
+
+
   </div>
     <div class="mainContent">
 
@@ -280,7 +351,7 @@
                 </div>
             </div>
         </div>
-        <div class="mainContent_text">
+        <div class="mainContent_text d-none">
           <div class="container-fluid g-0">
             <div class="row g-0 align-items-center">
                 <div class="col-12 ">
@@ -429,7 +500,7 @@
             </div>
               <div class="container-fluid g-0">
                 <div class="row">
-                  <div class="col-xxl-7 col-xl-6">
+                  <div class="col-xxl-7 col-6">
                     <div class="contentNews_text d-flex justify-content-between">
                       <div class="contentNews_data">
                         19 августа 2020
@@ -446,7 +517,7 @@
                       <img src="images/fotoNews.png" alt="">
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-xxl-5 col-6">
                       <div class="contentNews_new">
                         <div class="contentNews_new_text d-flex justify-content-between">
                           <div class="contentNews_data">
@@ -645,13 +716,14 @@
                         <div class="contentReviews_slide_content_text_data">14 ноября 2020</div>
 
                         <div class="contentReviews_slide_content_text_zagolovok">ООО «Газпром добыча Ямбург»</div>
-                        
+                        <div class="contentReviews_slide_content_text_description">
                         Специалистами Ямбургской лабораторией мерзлоты 
                         Инженерно-технического центра ООО «Газпром добыча Ямбург»<span class="dotdotdot">...</span>
-                        
+                        </div>
                       </div>
                       
-                        <a href="#" class="contentReviews_btn">Читать полностью</a>
+                        <a href="#" class="contentReviews_btn d-xl-inline-flex d-none">Читать полностью</a>
+                        <a href="#" class="contentReviews_btn d-xl-none d-inline-flex">Читать отзыв</a>
                       
                     </div>
                     <div class="contentReviews_slide_doc">
@@ -670,13 +742,14 @@
                         <div class="contentReviews_slide_content_text_data">14 ноября 2020</div>
 
                         <div class="contentReviews_slide_content_text_zagolovok">Мерзлотная станция Центра ИССО филиала ОАО «РЖД»</div>
-                        
+                        <div class="contentReviews_slide_content_text_description">
                         Специалистами Ямбургской лабораторией мерзлоты 
                         Инженерно-технического центра<span class="dotdotdot">...</span>
-
+                        </div>
                       </div>
                       
-                        <a href="#" class="contentReviews_btn">Читать полностью</a>
+                        <a href="#" class="contentReviews_btn d-xl-inline-flex d-none">Читать полностью</a>
+                        <a href="#" class="contentReviews_btn d-xl-none d-inline-flex">Читать отзыв</a>
                       
                     </div>
                     <div class="contentReviews_slide_doc">
@@ -701,9 +774,9 @@
     <footer>
       
       <div class="container-fluid g-0">
-        <div class="row g-0">
-          <div class="col-6 d-flex">
-            <div class="colOne">
+        <div class="row justify-content-end gy-5 gx-xl-5">
+         
+            <div class="col-xl-3 col-4">
               <div class="footer_phone">+7 495 108-76-19</div>
               <div class="footer_email">info@rgtekh.ru</div>
               <div class="footer_contactText">
@@ -715,7 +788,7 @@
               <img src="images/SkLogo.svg">
               </div>
             </div>
-            <div class="colOne">
+            <div class="col-xl-3 col-4">
               <a href="#" class="footerZagolovok">Системы мониторинга</a>
               <a href="#" class="footerPodzagolovok">С автоматизированным сбором данных</a>
               <a href="#" class="footerPodzagolovok">С ручным сбором данных</a>
@@ -725,9 +798,9 @@
                 Конфигуратор
               </a>
             </div>
-          </div>
-          <div class="col-6 d-flex">
-            <div class="colTwo">
+          
+          
+            <div class="col-xl-2 col-4">
               <a href="#" class="footerZagolovok">Каталог продукции</a>
               <a href="#" class="footerPodzagolovok">Термокоса</a>
               <a href="#" class="footerPodzagolovok">Считыватель температуры</a>
@@ -735,13 +808,13 @@
               <a href="#" class="footerPodzagolovok">Инклинометр</a>
               <a href="#" class="footerPodzagolovok">Комплектующие</a>
             </div>
-            <div class="colTwo">
+            <div class="col-xl-2 col-4">
               <a href="#" class="footerZagolovok">Софт</a>
               <a href="#" class="footerPodzagolovok">SmartGTM</a>
               <a href="#" class="footerPodzagolovok">SmartView</a>
               <a href="#" class="footerPodzagolovok">SmartPileTest</a>
             </div>
-            <div class="colTwo">
+            <div class="col-xl-2 col-4">
               <a href="#" class="footerZagolovok">Информация</a>
               <a href="#" class="footerPodzagolovok">О компании</a>
               <a href="#" class="footerPodzagolovok">Аккредитация</a>
@@ -750,24 +823,25 @@
               <a href="#" class="footerPodzagolovok">Новости</a>
               <a href="#" class="footerPodzagolovok">Статьи</a>
             </div>
-          </div>
         </div>
       </div>
+        
+      
       <div class="footer_line"></div>
       <div class="container-fluid g-0">
         <div class="row g-0">
-          <div class="col-6 d-flex">
-            <div class="colOne">
+          
+            <div class="col-xl-3 col-4">
             <div class="footer_OOO">© 2017-2018. ООО «РУСГЕОТЕХ». Все права защищены.</div>
             </div>
-            <div class="colOne">
+            <div class="col-xl-3 col-4 d-flex justify-content-end">
             <div class="footer_konf">Политика конфиденциальности</div>
             </div>
-          </div>
-          <div class="col-6 d-flex justify-content-end">
+          
+          <div class="col-xl-6 col-4 d-flex justify-content-end">
             <img src="images/MediaSetLogo.svg" alt="" class="MediaSetLogo">
           </div>
-          <div class="col-6">
+          <div class="col-xxl-6 col-xl-8 col-12">
             <div class="footer_description">
             Содержание настоящего интернет-сайта носит
             исключительно информационный характер и не 

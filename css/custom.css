@@ -159,7 +159,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1431px) {
   .sticky-xl-top {
     position: -webkit-sticky;
     position: sticky;
@@ -3275,7 +3275,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1431px) {
   .float-xl-start {
     float: left !important;
   }
@@ -5391,7 +5391,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1431px) {
   .col-xl {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 0%;
