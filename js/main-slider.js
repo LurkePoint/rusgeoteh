@@ -1,21 +1,76 @@
 $(function () {
     $('#owl-demo').owlCarousel({
         items: 1,
-        // autoplay: true,
         autoplayHoverPause: false,
         loop: true,
-        dots: false,
-        // autoplayTimeout: 5000,
-        smartSpeed: 1000,
+        dots: true,
+        smartSpeed: 500,
         startPosition: 'URLHash',
+        dotsContainer: '.headerItems_dots',
+        onInitialize: progressBar,
         
-        // arrows: false,
-        // dots: false,
-        // autoplay: true, 
-        // autoplaySpeed: 5500,
-        // speed: 1500
+        onTranslate: moved,
     })
 
+
+    var time = 5; // time in seconds
+ 
+    var $progressBar,
+        $bar, 
+        $elem, 
+        isPause, 
+        tick,
+        percentTime;
+
+        $progressBar = $("headerItems_progressBar");
+        $bar = $(".bar");
+
+
+        function progressBar(){    
+            
+            
+            // start counting
+            start();
+        }
+        
+
+      
+        
+        function start() {
+            // reset timer
+            percentTime = 0;
+            isPause = false;
+            
+            // run interval every 0.01 second
+            tick = setInterval(interval, 10);
+        };
+        
+        function interval() {
+            if(isPause === false){
+                percentTime += 1 / time;
+                
+                $bar.css({
+                    width: percentTime+"%"
+                });
+                
+                // if percentTime is equal or greater than 100
+                if(percentTime >= 100){
+                    // slide to next item 
+                    $("#owl-demo").trigger("next.owl.carousel");
+                    percentTime = 0; // give the carousel at least the animation time ;)
+                }
+            }
+        }
+        
+        
+        // moved callback
+        function moved(){
+            // clear interval
+            clearTimeout(tick);
+            
+            // start again
+            start();
+        }
 })
 
 
@@ -59,7 +114,7 @@ $(function () {
                 items: 1,
                 
             },
-            769 : {
+            700 : {
                 items: 2,
                 
             },
@@ -125,7 +180,7 @@ $(function () {
                 items: 1,
                
             },
-            700 : {
+            992 : {
                 items: 2,
                 
             },

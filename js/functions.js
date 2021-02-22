@@ -1,4 +1,5 @@
-$(window).scroll(function() {
+
+    $(window).scroll(function() {
     var height = $(window).scrollTop(); 
     if(height > 0){
     $('.logoText').addClass('logoText-black');
@@ -38,7 +39,7 @@ lastScrollTop = height;
 
 
   
-$(document).ready(function(){ 
+var header = $(document).ready(function(){ 
   
   $('.menu_item').hover(function(){
     
@@ -138,20 +139,49 @@ $('.zagolovok_info').on('click', function (e) {
 
 
 
-
-
-
-
-
 $('.burger').on('click', function (e) {
   e.preventDefault();
   $('.burger').toggleClass('burger-active');
   $('.menu').toggleClass('menu-active');
   $('body').toggleClass('body-lock');
+  $('.podmenu_sys').removeClass('podmenu_sys-active');
+  $('.podmenu_katalog').removeClass('podmenu_katalog-active');
+  $('.podmenu_soft').removeClass('podmenu_soft-active');
+  $('.podmenu_info').removeClass('podmenu_info-active');
   $('html, body').animate({
     scrollTop: 0,
   }, 0, "linear");
 });
+
+
+  $(function () {
+    var Accordion = function(el, multiple) {
+      this.el = el || {};
+      this.multiple = multiple || false;
+  
+      // Variables privadas
+      var links = this.el.find('.footerZagolovok');
+      // Evento
+      links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+    }
+  
+    Accordion.prototype.dropdown = function(e) {
+      var $el = e.data.el;
+        $this = $(this),
+        $next = $this.next();
+  
+      $next.slideToggle();
+      $this.parent().toggleClass('footer_podmenu-active');
+  
+      
+    }	
+  
+    var accordion = new Accordion($('.footerMenu'), false);
+    
+  });
+
+
+
 
 
 $('.profile_svg').on('click', function (e) {
