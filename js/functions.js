@@ -148,9 +148,7 @@ $('.burger').on('click', function (e) {
   $('.podmenu_katalog').removeClass('podmenu_katalog-active');
   $('.podmenu_soft').removeClass('podmenu_soft-active');
   $('.podmenu_info').removeClass('podmenu_info-active');
-  $('html, body').animate({
-    scrollTop: 0,
-  }, 0, "linear");
+  
 });
 
 
