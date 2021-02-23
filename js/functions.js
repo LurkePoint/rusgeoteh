@@ -170,7 +170,7 @@ $('.burger').on('click', function (e) {
         $this = $(this),
         $next = $this.next();
   
-      $next.slideToggle();
+      $next.slideToggle(300);
       $this.parent().toggleClass('footer_podmenu-active');
   
       
@@ -190,6 +190,17 @@ $('.profile_svg').on('click', function (e) {
     $('.login').toggleClass('login-active');
     
 });
+
+$('.search_svg').on('click', function (e) {
+  e.preventDefault();
+  $('.blockSearch').addClass('blockSearch-active');
+});
+
+$('.blockSearch_fon').on('click', function (e) {
+  e.preventDefault();
+  $('.blockSearch').removeClass('blockSearch-active');
+});
+
 
 
 $(window).scroll(function() {
