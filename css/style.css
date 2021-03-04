@@ -191,6 +191,7 @@ video {
 }
 header {
   position: fixed;
+  
   width: 100%;
   z-index: 50;
   transition: 0.2s;
@@ -269,7 +270,7 @@ header {
   background: linear-gradient(115deg, #2400ff 0%, #5700d1 20%, #8400c6 40%, #a600e2 60%, #ffa30b 75%, #e81d1d 85%);
   background-size: 2000% 2000%;
   animation: rainbow 18s ease infinite;
-	transition: 0.3s;
+	transition: 0.2s;
 }
 .menu_item:hover .menu_item_a::after {
   width: 100%;
@@ -291,15 +292,17 @@ header {
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  left: -100%;
+  left: 0;
+  
+  transform: translateX(-20%);
   padding: 40px 40px;
   border-top: 1px solid #E0E1E3;
   background-color: white;
-  transition: 0.3s;
+  transition: 0.2s;
   
 }
 .menu_item:hover .podmenu {
-  left: 0;
+  transform: translateX(0);
   visibility: visible;
   opacity: 1;
 }
@@ -1899,6 +1902,9 @@ footer a {
   }
   .contentReviews_btn_readAll {
     display: none;
+  }
+  .contentReviews_btn_readReview {
+    display: inline-flex;
   }
   footer {
     padding: 30px 20px 30px 20px;
